@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">  <!--引入thymeleaf约束-->
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+th:text标签：随便写写：  <span th:text="随便写的" ></span>  </br>
+th:text标签：获取作用域对象的属性值：  <span th:text="${msg}"></span> </br>
+th:value标签,会给元素的valu赋值： <input type="submit" th:value="${msg}"> </br>
+也可以直接这样写"input type="submit" value="${msg}": <input type="submit" value="${msg}">
+
+</body>
+</html>
